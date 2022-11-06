@@ -56,20 +56,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountDetails.cs" />
-    <Compile Include="BankBalance.cs" />
-    <Compile Include="EmployeeActions.cs" />
-    <Compile Include="EmployeeDetails.cs" />
-    <Compile Include="frmEmployeeLogin.cs">
+    <Compile Include="BankAccountsAndTransactions\AccountDetails.cs" />
+    <Compile Include="BankAccountsAndTransactions\BankBalance.cs" />
+    <Compile Include="Employees\EmployeeActions.cs" />
+    <Compile Include="Employees\EmployeeDetails.cs" />
+    <Compile Include="Forms\frmEmployeeLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEmployeeLogin.Designer.cs">
+    <Compile Include="Forms\frmEmployeeLogin.Designer.cs">
       <DependentUpon>frmEmployeeLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEmployeeActionsPage.cs">
+    <Compile Include="Forms\frmEmployeeActionsPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEmployeeActionsPage.Designer.cs">
+    <Compile Include="Forms\frmEmployeeActionsPage.Designer.cs">
       <DependentUpon>frmEmployeeActionsPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202210081101354_InitialCreate.cs" />
@@ -91,11 +91,11 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TransactionHistory.cs" />
-    <EmbeddedResource Include="frmEmployeeLogin.resx">
+    <Compile Include="BankAccountsAndTransactions\TransactionHistory.cs" />
+    <EmbeddedResource Include="Forms\frmEmployeeLogin.resx">
       <DependentUpon>frmEmployeeLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEmployeeActionsPage.resx">
+    <EmbeddedResource Include="Forms\frmEmployeeActionsPage.resx">
       <DependentUpon>frmEmployeeActionsPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202210081101354_InitialCreate.resx">

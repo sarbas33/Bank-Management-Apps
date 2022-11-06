@@ -40,3 +40,24 @@ C:\Users\hp\source\repos\dotnet projects\Bank_Accounts - Copy (2)\Bank_Accounts\
 C:\Users\hp\source\repos\dotnet projects\Bank_Accounts - Copy (2)\Bank_Accounts\obj\Debug\Bank_Accounts.pdb
 C:\Users\hp\source\repos\dotnet projects\Bank_Accounts - Copy (2)\Bank_Accounts\obj\Debug\Bank_Accounts.frmEmployeeLogin.resources
 C:\Users\hp\source\repos\dotnet projects\Bank_Accounts - Copy (2)\Bank_Accounts\obj\Debug\EmployeeForm.frmEmployeeActionsPage.resources
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\bin\Debug\Bank_Accounts.exe.config
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\bin\Debug\Bank_Accounts.exe
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\bin\Debug\Bank_Accounts.pdb
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\bin\Debug\EntityFramework.dll
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\bin\Debug\EntityFramework.xml
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\obj\Debug\Bank_Accounts.csproj.AssemblyReference.cache
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\obj\Debug\Bank_Accounts.csproj.SuggestedBindingRedirects.cache
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\obj\Debug\Bank_Accounts.frmEmployeeLogin.resources
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\obj\Debug\EmployeeForm.frmEmployeeActionsPage.resources
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\obj\Debug\Bank_Accounts.Migrations.InitialCreate.resources
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\obj\Debug\Bank_Accounts.Migrations.inital.resources
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\obj\Debug\Bank_Accounts.Migrations.Account.resources
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\obj\Debug\Bank_Accounts.Migrations.Transactions.resources
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\obj\Debug\Bank_Accounts.Properties.Resources.resources
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\obj\Debug\Bank_Accounts.csproj.GenerateResource.cache
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\obj\Debug\Bank_Accounts.csproj.CoreCompileInputs.cache
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\obj\Debug\Bank_Accounts.csproj.CopyComplete
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\obj\Debug\Bank_Accounts.exe
+C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\Bank_Accounts\obj\Debug\Bank_Accounts.pdb
