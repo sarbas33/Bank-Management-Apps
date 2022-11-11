@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CustomerWebApp.Migrations
 {
     [DbContext(typeof(CustomerWebAppContext))]
-    [Migration("20221110143527_InternetBankingLoginCreds")]
-    partial class InternetBankingLoginCreds
+    [Migration("20221110163811_CreateLoginCredentialTable")]
+    partial class CreateLoginCredentialTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,7 +23,7 @@ namespace CustomerWebApp.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("CustomerWebApp.Models.InternetBankingLoginCreds", b =>
+            modelBuilder.Entity("CustomerWebApp.Models.LoginCustomer", b =>
                 {
                     b.Property<int>("SerialNumber")
                         .ValueGeneratedOnAdd()
@@ -37,12 +37,13 @@ namespace CustomerWebApp.Migrations
                     b.Property<int>("InternetBankingId")
                         .HasColumnType("int");
 
-                    b.Property<int>("InternetBankingPassword")
-                        .HasColumnType("int");
+                    b.Property<string>("InternetBankingPassword")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("SerialNumber");
 
-                    b.ToTable("InternetBankingLoginCreds");
+                    b.ToTable("LoginCustomer");
                 });
 #pragma warning restore 612, 618
         }

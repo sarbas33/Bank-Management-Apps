@@ -4,30 +4,30 @@
 
 namespace CustomerWebApp.Migrations
 {
-    public partial class InternetBankingLoginCreds : Migration
+    public partial class CreateLoginCredentialTable : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "InternetBankingLoginCreds",
+                name: "LoginCustomer",
                 columns: table => new
                 {
                     SerialNumber = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     AccountNumber = table.Column<int>(type: "int", nullable: false),
                     InternetBankingId = table.Column<int>(type: "int", nullable: false),
-                    InternetBankingPassword = table.Column<int>(type: "int", nullable: false)
+                    InternetBankingPassword = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_InternetBankingLoginCreds", x => x.SerialNumber);
+                    table.PrimaryKey("PK_LoginCustomer", x => x.SerialNumber);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "InternetBankingLoginCreds");
+                name: "LoginCustomer");
         }
     }
 }

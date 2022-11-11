@@ -23,24 +23,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/InternetBankingLoginCreds/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJuZXRCYW5raW5nTG9naW5DcmVkc1xDcmVhdGUuY3NodG1s
+[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/LoginCustomers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5DdXN0b21lcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/InternetBankingLoginCreds/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJuZXRCYW5raW5nTG9naW5DcmVkc1xEZWxldGUuY3NodG1s
+[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/LoginCustomers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5DdXN0b21lcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/InternetBankingLoginCreds/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJuZXRCYW5raW5nTG9naW5DcmVkc1xEZXRhaWxzLmNzaHRtbA==
+[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/LoginCustomers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5DdXN0b21lcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/InternetBankingLoginCreds/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJuZXRCYW5raW5nTG9naW5DcmVkc1xFZGl0LmNzaHRtbA==
+[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/LoginCustomers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5DdXN0b21lcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/InternetBankingLoginCreds/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJuZXRCYW5raW5nTG9naW5DcmVkc1xJbmRleC5jc2h0bWw=
+[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/LoginCustomers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5DdXN0b21lcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/Shared/Error.cshtml]

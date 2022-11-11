@@ -1,4 +1,4 @@
-﻿@model CustomerWebApp.Models.InternetBankingLoginCreds
+﻿@model CustomerWebApp.Models.LoginCustomer
 
 @{
     ViewData["Title"] = "Create";
@@ -6,36 +6,31 @@
 
 <h1>Create</h1>
 
-<h4>InternetBankingLoginCreds</h4>
+<h4>LoginCustomer</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="FindAccountNumber">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="AccountNumber" class="control-label"></label>
-                <input asp-for="AccountNumber" class="form-control" />
-                <span asp-validation-for="AccountNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="InternetBankingId" class="control-label"></label>
+                <label asp-for="InternetBankingId" class="control-label">User ID</label>
                 <input asp-for="InternetBankingId" class="form-control" />
                 <span asp-validation-for="InternetBankingId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="InternetBankingPassword" class="control-label"></label>
+                <label asp-for="InternetBankingPassword" class="control-label">Password</label>
                 <input asp-for="InternetBankingPassword" class="form-control" />
                 <span asp-validation-for="InternetBankingPassword" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Log In" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Forgot Password</a>
 </div>
 
 @section Scripts {

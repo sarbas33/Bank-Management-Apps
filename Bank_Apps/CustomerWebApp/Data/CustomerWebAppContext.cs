@@ -14,6 +14,6 @@ namespace CustomerWebApp.Data
         {
         }
 
-        public DbSet<CustomerWebApp.Models.InternetBankingLoginCreds> InternetBankingLoginCreds { get; set; } = default!;
+        public DbSet<CustomerWebApp.Models.LoginCustomer> LoginCustomer { get; set; }
     }
 }
