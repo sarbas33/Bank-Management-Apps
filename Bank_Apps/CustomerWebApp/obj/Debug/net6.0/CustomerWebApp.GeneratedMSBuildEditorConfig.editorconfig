@@ -15,6 +15,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\hp\OneDrive\Desktop\githubProjects\Bank_Apps\CustomerWebApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/Accounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/Accounts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/Accounts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/Accounts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/Accounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -37,6 +57,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/LoginCustomers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5DdXN0b21lcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/LoginCustomers/FindAccountNumber.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5DdXN0b21lcnNcRmluZEFjY291bnROdW1iZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/LoginCustomers/GetBankBalance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5DdXN0b21lcnNcR2V0QmFua0JhbGFuY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hp/OneDrive/Desktop/githubProjects/Bank_Apps/CustomerWebApp/Views/LoginCustomers/Index.cshtml]

@@ -1,0 +1,40 @@
+﻿@model CustomerWebApp.Models.Account
+
+<div>
+    <h2>  Welcome to ABC Internet Banking </h2>
+    <h4>Hi @Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ifsc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ifsc)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MobileNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MobileNumber)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="GetBankBalance">Show Bank Balance</a> 
+    <a asp-action="Edit" asp-route-id="@Model?.AccountNumber">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+
+
+    <form asp-action="GetBankBalance">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <span asp-validation-for="AccountNumber" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <br />
+            <input type="submit" value="Check Balance" class="btn btn-primary" />
+        </div>
+    </form>
+
+
+</div>
