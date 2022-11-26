@@ -20,9 +20,22 @@
     </dl>
 </div>
 <div>
-    <a asp-action="GetBankBalance">Show Bank Balance</a> 
+    <a asp-controller="TransferMoney"  asp-action="TransferMoneyIntra">Transfer Money To ABC Accounts</a>
+    <a asp-action="TransferMoneyOther">Transfer Money To Other Accounts</a>
     <a asp-action="Edit" asp-route-id="@Model?.AccountNumber">Edit</a> |
     <a asp-action="Index">Back to List</a>
+
+    <form asp-action="TransferMoneyIntra" asp-controller="TransferMoney">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <span asp-validation-for="AccountNumber" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <br />
+            <input type="submit" value="Transfer Money" class="btn btn-primary" />
+        </div>
+    </form>
+
 
 
     <form asp-action="GetBankBalance">
@@ -35,6 +48,5 @@
             <input type="submit" value="Check Balance" class="btn btn-primary" />
         </div>
     </form>
-
 
 </div>

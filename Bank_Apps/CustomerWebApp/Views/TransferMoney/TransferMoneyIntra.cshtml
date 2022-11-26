@@ -1,0 +1,40 @@
+﻿@model CustomerWebApp.Models.TransferMoney
+
+<h4>Transfer Money To other ABC Accounts</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="TransferProcessing">
+            <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
+            <div class="form-group">
+                <label asp-for="FromAccountNumber" class="control-label">Enter Receipient Account Number</label>
+                <input asp-for="FromAccountNumber" class="form-control" />
+                <span asp-validation-for="FromAccountNumber" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="ToAccountNumber" class="control-label">Enter Receipient Account Number Again</label>
+                <input asp-for="ToAccountNumber" class="form-control" />
+                <span asp-validation-for="ToAccountNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Transfer Money" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+
+<div>
+    <a asp-action="LogOut" asp-controller="LoginCustomers">Cancel Transaction</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

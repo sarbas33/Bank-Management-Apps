@@ -17,5 +17,7 @@ namespace CustomerWebApp.Data
         public DbSet<CustomerWebApp.Models.LoginCustomer> LoginCustomer { get; set; }
 
         public DbSet<CustomerWebApp.Models.Account> Account { get; set; }
+
+        public DbSet<CustomerWebApp.Models.TransferMoney> TransferMoney { get; set; }
     }
 }

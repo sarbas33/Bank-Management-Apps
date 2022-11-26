@@ -1,0 +1,14 @@
+﻿@model CustomerWebApp.Models.TransferMoney
+
+<h2>Transfer Money To other ABC Accounts</h2>
+<hr />
+<h4> Success!!! Money Transferred</h4>
+
+
+<div>
+    <a asp-action="LogOut" asp-controller="LoginCustomers">Cancel Transaction</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
