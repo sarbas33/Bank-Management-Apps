@@ -152,11 +152,10 @@ namespace CustomerWebApp.Controllers
             //return View("FindAccountNumber",await _context.Account.Where(j=> j.AccountNumber == loginCustomer1.AccountNumber).ToListAsync());
 
         }
-
-        // GET: LoginCustomers/Create
-        public IActionResult Create()
+        // GET: LoginCustomers/LogIn
+        public IActionResult LogIn()
         {
-            return View();
+            return View("Create");
         }
         // POST: LoginCustomers/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -266,5 +265,14 @@ namespace CustomerWebApp.Controllers
         {
           return _context.LoginCustomer.Any(e => e.SerialNumber == id);
         }
+
+        [HttpGet]
+        [Route("/LoginCustomers/LogOut")]
+        public ActionResult LogOut()
+        {
+            TempData.Clear();
+            return View("Create");
+        }
+
     }
 }
