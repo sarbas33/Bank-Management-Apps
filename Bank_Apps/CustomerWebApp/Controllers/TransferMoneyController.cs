@@ -26,9 +26,6 @@ namespace CustomerWebApp.Controllers
         {
               return View(await _context.TransferMoney.ToListAsync());
         }
-
-        
-
         private bool TransferMoneyExists(int id)
         {
           return _context.TransferMoney.Any(e => e.SerialNumber == id);

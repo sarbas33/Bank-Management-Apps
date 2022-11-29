@@ -89,35 +89,7 @@ namespace CustomerWebApp.Controllers
         {
             return View();
         }
-        // POST: LoginCustomers/Create/Login/GetBankBalance
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> GetBankBalance([Bind("AccountNumber", "FirstName", "LastName", "Ifsc", "MobileNumber")] Account loginCustomer)
-        {
-            //int accNumber = 0;
-            //int accNum = loginCustomer.AccountNumber;
-            int accNumber = Convert.ToInt32(TempData["AccountNumber"]);
 
-            var loginCustomer1 = await _context.LoginCustomer
-                .FirstOrDefaultAsync(m => m.AccountNumber == accNumber );
-
-            if (loginCustomer1 == null)
-            {
-                return NotFound();
-            }
-            else
-            {
-                accNumber = loginCustomer1.AccountNumber;
-            }
-            
-            TempData["BankBalance"] = _AccountDetailscontext.BankBalanceClasses.Where(j => j.AccountNumber == loginCustomer1.AccountNumber).FirstOrDefault().Balance.ToString();
-
-            return View("GetBankBalance", _AccountDetailscontext.Accounts.Where(j => j.AccountNumber == loginCustomer1.AccountNumber).FirstOrDefault());
-            //return View("FindAccountNumber",await _context.Account.Where(j=> j.AccountNumber == loginCustomer1.AccountNumber).ToListAsync());
-
-        }
         // GET: LoginCustomers/Create/Login/GetBankBalance
         public IActionResult TransferMoneyIntra()
         {

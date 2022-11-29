@@ -67,94 +67,34 @@ namespace CustomerWebApp.Controllers
             return View(account);
         }
 
-        // GET: Accounts/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null || _context.Account == null)
-            {
-                return NotFound();
-            }
-
-            var account = await _context.Account.FindAsync(id);
-            if (account == null)
-            {
-                return NotFound();
-            }
-            return View(account);
-        }
-
-        // POST: Accounts/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("AccountNumber,FirstName,LastName,Ifsc,AccountSummary,AadharNumber,MobileNumber")] Account account)
+        public async Task<IActionResult> GetBankBalance([Bind("AccountNumber", "FirstName", "LastName", "Ifsc", "MobileNumber")] Account loginCustomer)
         {
-            if (id != account.AccountNumber)
+            //int accNumber = 0;
+            //int accNum = loginCustomer.AccountNumber;
+            int accNumber = Convert.ToInt32(TempData["AccountNumber"]);
+            TempData["AccountNumber"] = accNumber.ToString();
+
+            var loginCustomer1 = await _context.LoginCustomer
+                .FirstOrDefaultAsync(m => m.AccountNumber == accNumber);
+
+            if (loginCustomer1 == null)
             {
                 return NotFound();
             }
-
-            if (ModelState.IsValid)
+            else
             {
-                try
-                {
-                    _context.Update(account);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!AccountExists(account.AccountNumber))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                accNumber = loginCustomer1.AccountNumber;
             }
-            return View(account);
+
+            TempData["BankBalance"] = _AccountDetailscontext.BankBalanceClasses.Where(j => j.AccountNumber == loginCustomer1.AccountNumber).FirstOrDefault().Balance.ToString();
+
+            return View("GetBankBalance", _AccountDetailscontext.Accounts.Where(j => j.AccountNumber == loginCustomer1.AccountNumber).FirstOrDefault());
+            //return View("FindAccountNumber",await _context.Account.Where(j=> j.AccountNumber == loginCustomer1.AccountNumber).ToListAsync());
+
         }
-
-        // GET: Accounts/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null || _context.Account == null)
-            {
-                return NotFound();
-            }
-
-            var account = await _context.Account
-                .FirstOrDefaultAsync(m => m.AccountNumber == id);
-            if (account == null)
-            {
-                return NotFound();
-            }
-
-            return View(account);
-        }
-
-        // POST: Accounts/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            if (_context.Account == null)
-            {
-                return Problem("Entity set 'CustomerWebAppContext.Account'  is null.");
-            }
-            var account = await _context.Account.FindAsync(id);
-            if (account != null)
-            {
-                _context.Account.Remove(account);
-            }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
+        
         private bool AccountExists(int id)
         {
           return _context.Account.Any(e => e.AccountNumber == id);
@@ -184,6 +124,44 @@ namespace CustomerWebApp.Controllers
             return View("", _AccountDetailscontext.Accounts.Where(j => j.AccountNumber == loginCustomer1.AccountNumber).FirstOrDefault());
             //return View("FindAccountNumber",await _context.Account.Where(j=> j.AccountNumber == loginCustomer1.AccountNumber).ToListAsync());
 
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> FindAccount([Bind("SerialNumber,AccountNumber,InternetBankingId,InternetBankingPassword")] LoginCustomer loginCustomer)
+        {
+            int accNumber = 0;
+            //if (id == 0 || _context.LoginCustomer == null)
+            //{
+            //    return NotFound();
+            //}
+            int id = loginCustomer.InternetBankingId;
+            string password = loginCustomer.InternetBankingPassword;
+
+            var loginCustomer1 = await _context.LoginCustomer
+                .FirstOrDefaultAsync(m => m.InternetBankingId == id && m.InternetBankingPassword == password);
+
+            if (loginCustomer1 == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                TempData["AccountNumber"] = loginCustomer1.AccountNumber;
+            }
+
+
+            return View("FindAccountNumber", _AccountDetailscontext.Accounts.Where(j => j.AccountNumber == loginCustomer1.AccountNumber).FirstOrDefault());
+            //return View("FindAccountNumber",await _context.Account.Where(j=> j.AccountNumber == loginCustomer1.AccountNumber).ToListAsync());
+
+        }
+        [HttpGet]
+        [Route("/Accounts/AccountPage")]
+        public ActionResult AccountPage()
+        {
+            int accNumber = Convert.ToInt32(TempData["AccountNumber"]);
+            TempData["AccountNumber"] = accNumber;
+            return View("FindAccountNumber", _AccountDetailscontext.Accounts.Where(j => j.AccountNumber == accNumber).FirstOrDefault());
         }
     }
 }

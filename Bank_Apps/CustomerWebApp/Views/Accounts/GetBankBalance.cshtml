@@ -22,6 +22,6 @@
 <div>
     <h4>Bank Balance: Rs @TempData["BankBalance"] </h4>
     <br />
-    <a asp-action="Index">Back to List</a>
-    <a asp-action="Edit" asp-route-id="@Model?.AccountNumber">Edit</a>
+    <a asp-action="AccountPage">Back to Accounts Page</a> <br />
+    <a asp-action="LogOut" asp-controller="LoginCustomers">LogOut</a> <br />
 </div>
