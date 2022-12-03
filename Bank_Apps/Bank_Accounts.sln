@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_Accounts_Employee_App", "Bank_Accounts\Bank_Accounts_Employee_App.csproj", "{28D0F1D9-04B8-408D-9A96-6C4F7C5D6C1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerWebApp", "CustomerWebApp\CustomerWebApp.csproj", "{07096BC1-B01B-4AE0-8A54-6DE8DA17ED66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerWebApp", "CustomerWebApp\CustomerWebApp.csproj", "{07096BC1-B01B-4AE0-8A54-6DE8DA17ED66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
